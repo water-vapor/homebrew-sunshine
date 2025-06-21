@@ -205,8 +205,6 @@ index 5b3638d..aca9481 100644
 
   def install
     ENV["BRANCH"] = "master"
-    ENV["BUILD_VERSION"] = "v2025.617.220707"
-    ENV["COMMIT"] = "b48e6303eacef404b14eb797a890b004f32c3fd4"
 
     args = %W[
       -DBUILD_WERROR=ON
