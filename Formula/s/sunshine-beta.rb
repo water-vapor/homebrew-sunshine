@@ -5,8 +5,8 @@ class SunshineBeta < Formula
   desc "Self-hosted game stream host for Moonlight"
   homepage "https://app.lizardbyte.dev/Sunshine"
   url "https://github.com/water-vapor/Sunshine.git",
-    tag: "v2025.617.220707"
-  version "2025.617.220707"
+    branch: "master"
+  version "HEAD"
   license all_of: ["GPL-3.0-only"]
   head "https://github.com/water-vapor/Sunshine.git", branch: "master"
 
@@ -216,9 +216,9 @@ index 5b3638d..aca9481 100644
       -DOPENSSL_ROOT_DIR=#{Formula["openssl"].opt_prefix}
       -DSUNSHINE_ASSETS_DIR=sunshine/assets
       -DSUNSHINE_BUILD_HOMEBREW=ON
-      -DSUNSHINE_PUBLISHER_NAME='LizardByte'
-      -DSUNSHINE_PUBLISHER_WEBSITE='https://app.lizardbyte.dev'
-      -DSUNSHINE_PUBLISHER_ISSUE_URL='https://app.lizardbyte.dev/support'
+      -DSUNSHINE_PUBLISHER_NAME='water-vapor'
+      -DSUNSHINE_PUBLISHER_WEBSITE=''
+      -DSUNSHINE_PUBLISHER_ISSUE_URL=''
     ]
 
     if build.with? "docs"
